@@ -1,0 +1,143 @@
+
+@media only screen and (max-width: 600px) {
+
+    /*--Index Page--*/
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-toggl img{
+        width: 10px;
+    }
+    .container{
+        overflow: initial;
+
+    }
+
+    .menu {
+        position: absolute;
+        background-color: antiquewhite;
+        left: -100%;
+        top: 20%;
+        width: 100%;
+        padding-block: 20px;
+        justify-content: center;
+        transition: 0.2s ease-in-out;
+        
+
+    }
+    .menu.active{
+        left: 0;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        display: flex;
+    }
+    .logo img {
+        float: left;
+    }
+    /* .book{
+        padding-top: 10%;
+        align-items: center;
+        
+    } */
+  
+  .title.fix{
+    display: none;
+  }
+  .title2.fix{
+    display: block;
+    text-align: center;
+    /* background-image: url("img/lib.jpg"); */
+  }
+
+  .lib img {
+    width: 100%; /* Make the image fill the width of its container */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 15px;
+  }
+  /* .lib{
+    position: relative;
+  } */
+  /* SVG */
+  .header-right{
+    display: none;
+  }
+  .header2-left{
+    display: none;
+
+  }
+ .header-left h1{
+  color: lightslategrey;
+ }
+ .header2-right h1{
+  color: lightslategrey;
+
+ }
+ 
+
+  .fix {
+    padding: 0 10px;
+  }
+
+
+  .nav-toggle img{
+    width: 35px;
+    height: auto;
+  }  
+    .profile {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .card {
+      width: 90%;
+    }
+    .footer-section {
+      flex-basis: 100%;
+    }
+    
+ /*-------Student_corner---------------*/
+ .Academic_Calendar{
+  flex-direction: column;
+  
+ }
+/* .Academic_card h2 {
+  font-size:2vw;
+} */
+  
+  /* *****************************Faculty****************************************** */
+  
+  .div {
+    width: 90%;
+}
+
+.div .left-column {
+    padding-right: 0;
+}
+
+/* .div .left-column img {
+    height: 50px;
+    max-width: 1000%;
+    border-radius: 0;
+} */
+
+.right-column {
+    flex: 1;
+}
+.left-column img{
+    height: 200px;
+    width: 50%;
+    border-radius:50% ;
+
+  }
+
+ /*--------------------------------Extra-Activity---------------------*/
+ 
+ 
+.e-sem{
+  display: block;
+}
+  /******************************************************************************************************************************/
+}

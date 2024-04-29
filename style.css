@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif'; 
+    background-color: #f8f4f0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --primary-text-color: darkblue;
+    --secondary--text--color: #1e3a2b;
+    --padding-inline-section: 20px ;
+
+  }
+
+  h1{
+    color: var(--primary-text-color);
+  }
+
+  p{
+    color: #1e3a2b;
+  }
+  h2{
+    text-align: center;
+    color: #1e3a2b;
+    font-weight: bolder;
+  }
+  h3{
+    color: darkblue;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: red;
+    /* --- */
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+
+  }
+  .fix{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+
+  }
+  
+  a:hover{
+    color: darkgreen;
+    text-decoration: underline;
+  }
+  .logo img {
+    /* height: 70px; */
+    max-width: 70px; /* Ensure the image doesn't exceed the container width */
+    max-height: 70px; /* Ensure the image doesn't exceed the container height */
+    vertical-align: middle; /* Align the image vertically */
+    /* border-radius: 50%; */
+    border-radius: 25% 25% 25% 25% / 25% 25% 25% 25%;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*remov*/
+    list-style: none;
+    
+  }
+  
+  nav ul li {
+    /* display: inline; */
+    margin-right: 20px;
+    /* remove */
+    display: inline-block;
+  
+    position: relative;
+  }
+  
+  nav ul li a {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .flex{
+    display: flex;
+  }
+  .contact-btn {
+    padding: 10px 20px;
+    background-color: #FF5733;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; 
+  }
+  
+  
+  .nav-toggle{
+    display: none;
+  }
+  /*Body*/
+  .title{
+    text-align: center;
+  }
+  .title2.fix{
+    display: none;
+  }
+.lib img{
+   width: 1200px;
+   height: 300px;
+    border-radius: 25px; 
+   /* border-radius: 0% 0% 22% 24% / 67% 64% 25% 25%; */
+   /* border-radius: 0% 0% 72% 24% / 67% 64% 25% 25%; */
+   /* border-radius: 0% 0% 72% 24% / 67% 64% 12% 25%; */
+   /* border-radius: 0% 0% 25% 25% / 25% 25% 25% 0%; */
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   
+  
+}
+ .header{
+  display: flex;
+  gap: 300px;
+
+}
+.header-right img{
+  width: 400px;
+}
+
+.header2{
+  display: flex;
+  gap: 300px;
+
+}
+.header2-left img{
+  width: 400px;
+} 
+
+
+
+
+/* ----------------------------------------FAQ's------------------------------- */
+
+/*body{
+  line-height: 1.6rem;
+}*/
+
+.accordian{
+  background-color: white;
+  padding: 4px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgb(255,205, 255);
+  cursor: pointer;
+}
+
+.question{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon{
+  margin-right: 30px;
+  transition: transform 0.2s;
+}
+
+.icon.active{
+  transform: rotate(-180deg);
+
+}
+.answer{
+  color: #666;
+  max-height: 0;
+  /* max-height: 0; */
+
+  overflow: hidden;
+  transition: max-height 0.2s;
+}
+
+.answer.active{
+  /* max-height: 200px ; */
+  max-height: 100% ;
+
+}
+
+.question img{
+  height: 60vw;
+}
+
+
+/* --------------------------------------Profile-Card------------------------ */
+.profile{
+  display: flex;
+  gap: 250px;
+}
+
+.card {
+  width: 400px;
+  background-color: #eff87a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  float: left;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.designation{
+  color: #1e3a2b;
+}
+.intro {
+  margin-top: 10px;
+}
+
+  
+  /*------------------------------ Footer --------------------------------------------------- */
+ /*----------------------------------------------------------------------------------------- */
+
+ .footer {
+  background-color: #cfdcff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.footer-section {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: darkblue;
+}
+
+.footer-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #007bff;
+}
+.cover:hover{
+  color: #007bff;
+}
+/*********************Social-Media**************************************/
+
+/* Styles for the watermark container */
+#watermark-container {
+  /* position: fixed; */
+  bottom: 20px;
+  right: 20px;
+  pointer-events: none; /* Ensures the watermark doesn't interfere with user interaction */
+}
+
+
+#watermark-text {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
+  /* float: right; */
+  margin-bottom: 1px;
+  
+}
+
+ /* Styles for the Instagram icon container */
+.instagram-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+
+}
+
+/* Styles for the Instagram icon */
+.instagram-icon img {
+  width: 30px; 
+  height: 30px; 
+  margin-right: 10px; 
+}
+
+
+
+/*---------------Page-2-------------------------Student_Corner_css---------------------------------*/
+
+.cover:hover{
+  background-color: #cfdcff ;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #f2f2f2;
+
+}
+/*--------------Academic_card-----------*/
+.Academic_card  {
+  width: 300px;
+  background-color: #eff87a;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.Academic_card h2 {
+  text-align: center;
+  color: #1e3a2b;
+  line-height: 1px;
+  
+}
+
+.calendar-detail {
+  margin-top: 20px;
+}
+
+.calendar-detail h1 {
+  margin: 5px 0;
+  text-align: center;
+  color: #1e3a2b;  
+}
+.container_btn {
+  text-align: center;
+}
+
+.centered-button {
+  background-color: #1e3a2b;
+  color: #eff87a;
+  cursor: pointer;
+
+}
+
+.Academic_Calendar{
+  display: flex;
+}
+
+/* Questio paper */
+.q_paper {
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.cover {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #eff87a;
+}
+.cover h1{
+  color: #1e3a2b;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+/*------------------------------------Gallery---------------------------------------------*/
+/* Main Gallery Page */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.photo-card {
+  margin: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: scale(1.05);
+}
+
+.photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  
+}
+
+.description {
+  padding: 10px;
+  
+}
+
+.related-photos {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.related-photo {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.related-photo:hover {
+  transform: scale(1.1);
+}
+/* Gallery Section */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 10px;
+}
+.gallery-item img{
+  border-radius: 5px;
+}
+
+.gallery-image {
+  width: 20vmax;
+  height: auto;
+  
+  transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+} 
+/*--------------------------------Extra-Activity---------------------*/
+.e-sem{
+  display: none;
+}
+/*----------------------------------E-resourece----------------------------------*/
+
+.idpass{
+  color: #1e3a2b;
+  font-weight: bold;
+}
+/* .idpass-width{
+  width: 20%;
+  
+} */
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blinking-text {
+  animation: blink 1s infinite;
+}
+
+/* ----------------------------------- */
+
+/* Faculty css */
+/*  
+.div {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+.left-column {
+  display: block;
+  padding-right: 20px;
+  
+}
+
+.right-column {
+  flex: 2;
+}
+h1, h2, p {
+  margin: 0;
+}
+.header2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-info {
+  margin-bottom: 20px;
+}
+.contact-info p {
+  margin-bottom: 5px;
+}
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.section-content {
+  margin-bottom: 20px;
+}
+.experience, .education {
+  margin-bottom: 20px;
+}
+.experience p, .education p {
+  margin: 5px 0;
+}
+.left-column img{
+  height: 200px;
+  border-radius:50% ;
+} */
+
+
+
+ /* Submenu styles */
+ .submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  /* width: 100%; */
+  width: 200px;
+  
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+/*  */
+
+ .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 0.5;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  
+  border-radius: 3%;
+} 
+
+.alert.success {background-color: #04AA6D;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+
+.this{
+  background-color: lightgoldenrodyellow;
+}
+
+
+/*------Pop-up---------*/
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  /* background-color: white; */
+  background-image: url('popup_background.jpg'); /* Set the path to your image */
+
+  /* background-color: lightsteelblue; */
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  z-index: 9999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+#popup h4{
+  text-align: center;
+}
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* .blinking-img {
+  animation: blink 2s infinite;
+} */
+
+
+/*-----Video---------*/
+.video-container {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.video-container video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* box-shadow: 5px 5px gray; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+/*  */
+
+ /* CSS for video container */
